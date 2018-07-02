@@ -14,4 +14,9 @@ hashtagsParser("#FREETIBET")  // = > 'Free Tibet'
 hashtagsParser("#freetibetorg")  // = > 'Free Tibet'
 hashtagsParser("#free_tibet")  // = > 'Free Tibet'
 hashtagsParser("#FREE_TIBET") // =>  'Free Tibet'`
+hashtagsParser("#freeTIBET") // =>  'Free Tibet'`
+hashtagsParser("#FreeTIBET") // =>  'Free Tibet'`
+hashtagsParser("#freeTibet") // =>  'Free Tibet'`
+
+
 ```
