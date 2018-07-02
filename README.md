@@ -1,7 +1,7 @@
 
 # hashtags-parser
 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/Naor-Tedgi/hashtags-parser/blob/master/external/underconstruction.jpg)
 
 
 usage:
