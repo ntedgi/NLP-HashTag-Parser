@@ -1,4 +1,9 @@
+
 # hashtags-parser
+
+![alt text](http://url/to/img.png)
+
+
 usage:
 
 ```sh
