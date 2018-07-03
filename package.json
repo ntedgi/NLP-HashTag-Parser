@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Naor-Tedgi/hashtags-parser/issues"
   },
-  "homepage": "https://github.com/Naor-Tedgi/hashtags-parser#readme"
+  "homepage": "https://github.com/Naor-Tedgi/hashtags-parser#readme",
+  "dependencies": {
+    "twitter": "^1.7.1"
+  }
 }
