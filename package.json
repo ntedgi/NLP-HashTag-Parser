@@ -17,6 +17,11 @@
   },
   "homepage": "https://github.com/Naor-Tedgi/hashtags-parser#readme",
   "dependencies": {
+    "chai": "^4.1.2",
+    "chai-arrays": "^2.0.0",
     "twitter": "^1.7.1"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
   }
 }
