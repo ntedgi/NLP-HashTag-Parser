@@ -8,10 +8,14 @@ usage:
 
 ```sh
 let hashtagsParser = require('hashtags-parser');
-hashtagsParser("#FreeTibet") // = > 'Free Tibet'
-hashtagsParser("#3Tibet")  // = > ['Free Tibet','Tibet']
+22@ma
+this is the real deal
 hashtagsParser("#FREETIBET")  // = > 'Free Tibet'
 hashtagsParser("#freetibetorg")  // = > 'Free Tibet'
+
+this is the easy part 
+hashtagsParser("#FreeTibet") // = > 'Free Tibet'
+hashtagsParser("#3Tibet")  // = > ['Free Tibet','Tibet']
 hashtagsParser("#free_tibet")  // = > 'Free Tibet'
 hashtagsParser("#FREE_TIBET") // =>  'Free Tibet'`
 hashtagsParser("#freeTIBET") // =>  'Free Tibet'`
