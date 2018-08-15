@@ -8,7 +8,7 @@ usage:
 
 ```sh
 let hashtagsParser = require('hashtags-parser');
-22@ma
+
 this is the real deal
 hashtagsParser("#FREETIBET")  // = > 'Free Tibet'
 hashtagsParser("#freetibetorg")  // = > 'Free Tibet'
