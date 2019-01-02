@@ -1,0 +1,15 @@
+{
+  "consumer_key_1": "xPgfl66A3zYYuR8X9DgbcLaez",
+  "consumer_secret_1": "vmDug3Jopc46ySf3jBmBvTDTmihS5Xq0ZCHAD8uNFElZE9DWc4",
+  "access_token_key_1":"841996763158462464-GIwSzt5unl4mT8yKuTuLkzGELVN02Ws",
+  "access_token_secret_1":"0aajau5xSPYi0YkO1b05yT7kK9Arsk2muXBujTeYnocjd",
+  "consumer_key_2": "z1rUQMIaZv0bD33NwCa48MJ3U",
+  "consumer_secret_2": "xqnIJZdivrquEijmIufpvK8VGW1D2WHpz1tcuaYPKLL1JThGyU",
+  "access_token_key_2":"841996763158462464-cu5JSuvBkCUGS3LO9B9XOyvhLgN8m24",
+  "access_token_secret_2":"20Ds8VAOnV6a0Pz3jZ4f27hnqZ5c6LYSc5K0YE8nEyTLb",
+  "postgres_user": "postgres",
+  "postgres_host": "localhost",
+  "postgres_database": "taged_data_set",
+  "postgres_password": "postgres",
+  "postgres_port": 5432
+}
