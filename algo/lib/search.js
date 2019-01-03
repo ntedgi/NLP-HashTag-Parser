@@ -94,8 +94,11 @@ const extractWordsPartsOfQuery = (cleanQuery, keys) => {
   return result
 }
 
+const cleanText = str => str.replace(/[^A-Za-z]/g, '')
+
 const findHashTagOrEquivelentInKeys = (cleanQuery, keys) => {
   let candidates = []
+  keys = keys.map(e => cleanText(e))
   keys.forEach(e => {
     let cleanTerm = e.toLowerCase()
     if (cleanTerm == cleanQuery || cleanTerm.replace('#', '') == cleanQuery) {
@@ -171,7 +174,10 @@ module.exports = query => {
             let results = tweets['statuses']
             let texts = new Set(results.map(x => x.text))
             console.log(`${texts.size} qureys returns on term : ${query}`)
-            resolve({ words: countWords(texts, queryTerm), texts: [...texts].slice(1, 10) })
+            resolve({
+              words: countWords(texts, queryTerm),
+              texts: [...texts].slice(1, 10)
+            })
           }
         }
       )
