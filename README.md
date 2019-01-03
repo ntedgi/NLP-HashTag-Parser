@@ -1,6 +1,10 @@
 
 # hashtags-parser
 
+[![CircleCI](https://circleci.com/gh/Naor-Tedgi/hashtags-parser/tree/master.svg?style=svg)](https://circleci.com/gh/Naor-Tedgi/hashtags-parser/tree/master)
+
+
+
 ![alt text](https://github.com/Naor-Tedgi/hashtags-parser/blob/master/external/underconstruction.jpg)
 
 
