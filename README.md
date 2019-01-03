@@ -6,7 +6,7 @@
 ```sh
 let hashtagsParser = require('hashtags-parser');
 ```
-###  this is the real deal - 🚀🚀🚀
+###  this is the interesting part - 🚀🚀🚀
 ```sh
 hashtagsParser("#freetibet")  // = > ["Free", "Tibet"]
 hashtagsParser("#FREETIBET")  // = > ["Free", "Tibet"]
