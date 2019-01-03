@@ -1,5 +1,6 @@
 language: node_js
 node_js:
         - "stable"
+before_script: cd algo
 after_success:
-    - npm run coveralgo
+    - npm run coveralls
