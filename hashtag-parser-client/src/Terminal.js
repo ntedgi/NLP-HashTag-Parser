@@ -1,8 +1,20 @@
 import React, { Component } from 'react'
 import Terminal from 'terminal-in-react'
-import search from './logic/search'
+
+const showMsg = query => {
+  if (query.length == 0) return 'please enter command'
+  if (query.length == 1) return 'missing parameter usage : prase #<hash-tag> '
+  if (query.length > 2) return 'too many parameter usage : prase #<hash-tag> '
+
+  fetch(`/search/${query[1].replace('#', '')}`)
+    .then(response => response.json())
+    .then(myJson => {
+      console.log(JSON.stringify(myJson))
+    })
+  return 'processing...'
+}
+
 export default class TerminalUi extends Component {
-  showMsg = () => 'Hello World'
   render () {
     return (
       <div
@@ -13,27 +25,20 @@ export default class TerminalUi extends Component {
           alignItems: 'center'
         }}
       >
+      
         <Terminal
-          showActions={true}
+          showActions
+          startState='maximised'
           hideTopBar={false}
           allowTabs={false}
           color='green'
           backgroundColor='black'
           barColor='black'
-          style={{ fontWeight: 'bold', fontSize: '1em' }}
+          style={{ fontWeight: 'bold', fontSize: '1.5em' }}
           commands={{
-            pif: {
-              method:  async (args, print, runCommand)=> {
-                await search(`${args._[0]}`, res => {
-                   print(` ${res}`)
-                })
-              }
-            }
+            parse: showMsg
           }}
-          descriptions={{
-            'open-google': 'opens google.com'
-          }}
-          msg='You can write anything here. Example - Hello! My name is Foo and I like Bar.'
+          msg='try hashtag parser :-) . usage example: `parse #freetibet`'
         />
       </div>
     )

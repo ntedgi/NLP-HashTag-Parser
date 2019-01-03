@@ -171,7 +171,7 @@ module.exports = query => {
             let results = tweets['statuses']
             let texts = new Set(results.map(x => x.text))
             console.log(`${texts.size} qureys returns on term : ${query}`)
-            resolve({ words: countWords(texts, queryTerm), texts: texts })
+            resolve({ words: countWords(texts, queryTerm), texts: [...texts].slice(1, 10) })
           }
         }
       )

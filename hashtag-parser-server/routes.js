@@ -1,5 +1,5 @@
 const express = require('express')
-const search = require('./logic/search')
+const search = require('../algo/lib/search')
 module.exports = () => {
   const router = express.Router()
 
@@ -8,6 +8,7 @@ module.exports = () => {
       console.log(req.params.hash)
       let response = await search(`#${req.params.hash}`)
       res.json(response)
+      
     } catch (err) {
       res.status(500).end(err.message ? err.message : err)
     }
