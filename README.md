@@ -1,6 +1,5 @@
 
-## Hashtags Parser [![CircleCI](https://circleci.com/gh/Naor-Tedgi/hashtags-parser/tree/master.svg?style=svg)](https://circleci.com/gh/Naor-Tedgi/hashtags-parser/tree/master) [![Coverage Status](https://coveralls.io/repos/github/Naor-Tedgi/hashtags-parser/badge.svg?branch=master)](https://coveralls.io/github/Naor-Tedgi/hashtags-parser?branch=master)
-
+## Hashtags Parser [![Coverage Status](https://coveralls.io/repos/github/Naor-Tedgi/hashtags-parser/badge.svg?branch=master)](https://coveralls.io/github/Naor-Tedgi/hashtags-parser?branch=master) [![Build Status](https://travis-ci.org/Naor-Tedgi/hashtags-parser.svg?branch=master)](https://travis-ci.org/Naor-Tedgi/hashtags-parser)
 
 
 
