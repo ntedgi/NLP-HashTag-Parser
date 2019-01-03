@@ -4,7 +4,7 @@
   "description": "![alt text](https://github.com/Naor-Tedgi/hashtags-parser/blob/master/external/underconstruction.jpg)",
   "main": "index.js",
   "scripts": {
-    "test": "cd algo && npm test"
+    "testalgo": "cd algo && npm i && npm test"
   },
   "repository": {
     "type": "git",
