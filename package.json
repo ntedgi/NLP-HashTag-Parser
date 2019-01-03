@@ -1,0 +1,19 @@
+{
+  "name": "hashtagparser",
+  "version": "1.0.0",
+  "description": "![alt text](https://github.com/Naor-Tedgi/hashtags-parser/blob/master/external/underconstruction.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "cd algo && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Naor-Tedgi/hashtags-parser.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Naor-Tedgi/hashtags-parser/issues"
+  },
+  "homepage": "https://github.com/Naor-Tedgi/hashtags-parser#readme"
+}

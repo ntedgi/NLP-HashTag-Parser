@@ -22,13 +22,13 @@ describe('Hash Tag Parser.', () => {
 })
 
 
-hashtagsParser("#freetibet")  // = > ["Free", "Tibet"]
-hashtagsParser("#FREETIBET")  // = > ["Free", "Tibet"]
-hashtagsParser("#freetibetorg")  // = > ["Free", "Tibet"]
-hashtagsParser("#FreeTibet") // = > ["Free", "Tibet"]
-hashtagsParser("#3Tibet")  // = > ["Free", "Tibet"]
-hashtagsParser("#free_tibet")  // = > ["Free", "Tibet"]
-hashtagsParser("#FREE_TIBET") // =>  ["Free", "Tibet"]
-hashtagsParser("#freeTIBET") // =>  ["Free", "Tibet"]
-hashtagsParser("#FreeTIBET") // =>  ["Free", "Tibet"]
-hashtagsParser("#freeTibet") // =>  ["Free", "Tibet"]
+// hashtagsParser("#freetibet")  // = > ["Free", "Tibet"]
+// hashtagsParser("#FREETIBET")  // = > ["Free", "Tibet"]
+// hashtagsParser("#freetibetorg")  // = > ["Free", "Tibet"]
+// hashtagsParser("#FreeTibet") // = > ["Free", "Tibet"]
+// hashtagsParser("#3Tibet")  // = > ["Free", "Tibet"]
+// hashtagsParser("#free_tibet")  // = > ["Free", "Tibet"]
+// hashtagsParser("#FREE_TIBET") // =>  ["Free", "Tibet"]
+// hashtagsParser("#freeTIBET") // =>  ["Free", "Tibet"]
+// hashtagsParser("#FreeTIBET") // =>  ["Free", "Tibet"]
+// hashtagsParser("#freeTibet") // =>  ["Free", "Tibet"]
