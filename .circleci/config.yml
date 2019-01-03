@@ -33,6 +33,6 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
         
       # run tests!
-      - run: npm testalgo
+      - run: npm run testalgo
 
 
