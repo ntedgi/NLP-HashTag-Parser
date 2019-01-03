@@ -19,20 +19,21 @@ let hashtagsParser = require('hashtags-parser');
 
 ###  this is the interesting part - 🚀🚀🚀
 ```sh
-hashtagsParser("#freetibet")  // = > ["Free", "Tibet"]
-hashtagsParser("#FREETIBET")  // = > ["Free", "Tibet"]
-hashtagsParser("#freetibetorg")  // = > ["Free", "Tibet"]
+hashtagsParser("#freetibet")  // = > ["free", "tibet"]
+hashtagsParser("#realdonaldtrump")  // = > ["real","donald","trump"]
+hashtagsParser("#FREETIBET")  // = > ["free", "tibet"]
+hashtagsParser("#freetibetorg")  // = > ["free", "tibet"]
 ```
 
 ### this is the easy part 
 ```sh
-hashtagsParser("#FreeTibet") // = > ["Free", "Tibet"]
-hashtagsParser("#3Tibet")  // = > ["Free", "Tibet"]
-hashtagsParser("#free_tibet")  // = > ["Free", "Tibet"]
-hashtagsParser("#FREE_TIBET") // =>  ["Free", "Tibet"]
-hashtagsParser("#freeTIBET") // =>  ["Free", "Tibet"]
-hashtagsParser("#FreeTIBET") // =>  ["Free", "Tibet"]
-hashtagsParser("#freeTibet") // =>  ["Free", "Tibet"]
+hashtagsParser("#FreeTibet") // = > ["free", "tibet"]
+hashtagsParser("#3Tibet")  // = > ["free", "tibet"]
+hashtagsParser("#free_tibet")  // = > ["free", "tibet"]
+hashtagsParser("#FREE_TIBET") // =>  ["free", "tibet"]
+hashtagsParser("#freeTIBET") // =>  ["free", "tibet"]
+hashtagsParser("#FreeTIBET") // =>  ["free", "tibet"]
+hashtagsParser("#freeTibet") // =>  ["free", "tibet"]
 
 
 ```
