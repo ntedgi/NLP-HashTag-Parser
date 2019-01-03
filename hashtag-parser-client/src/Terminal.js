@@ -38,7 +38,7 @@ export default class TerminalUi extends Component {
           commands={{
             parse: showMsg
           }}
-          msg='try hashtag parser :-) . usage example: `parse #freetibet`'
+          msg='try hashtag parser :-) . usage example: `parse #realdonaldtrump`'
         />
       </div>
     )
