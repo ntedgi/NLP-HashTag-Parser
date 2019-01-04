@@ -99,20 +99,35 @@ const findHashTagOrEquivelentInKeys = (cleanQuery, keys) => {
   keys = keys.map(e => cleanText(e))
   keys.forEach(e => {
     let cleanTerm = e.toLowerCase()
-    if (cleanTerm == cleanQuery) {
+    if (cleanTerm == cleanQuery && !candidates.includes(e)) {
       candidates.push(e)
     }
   })
   return candidates
 }
 
+const selectUpperLowerHash = hashes => {
+  for (let i = 0; i < hashes.length; i++) {
+    let currentHash = hashes[i]
+    if (
+      currentHash.toLowerCase() != currentHash &&
+      currentHash.toUpperCase() != currentHash
+    ) {
+      return currentHash
+    }
+  }
+  return hashes[0]
+}
 const splitHashes = hashTags => {
-  let ans = hashTags[0].split(/(?=[A-Z])/).map(e => e.toLowerCase())
-  return ans
+  let ans = ''
+  if (hashTags.size == 1) ans = hashTags[0]
+  else {
+    ans = selectUpperLowerHash(hashTags)
+  }
+  return ans.split(/(?=[A-Z])/).map(e => e.toLowerCase())
 }
 
 const countWords = (texts, queryTerm) => {
-
   const wordsCounts = calculateWordsSupport(texts)
 
   let keys = Object.keys(wordsCounts)
@@ -150,11 +165,11 @@ const changeNumbersToWords = query => {
   return q
 }
 
-const removeCommonPostfix =query =>{
-  const commonPostfix = ["org"]
-  commonPostfix.forEach(e=>{
-    if(query.endsWith(e)){
-        query = query.slice(0,e.length*-1)
+const removeCommonPostfix = query => {
+  const commonPostfix = ['org']
+  commonPostfix.forEach(e => {
+    if (query.endsWith(e)) {
+      query = query.slice(0, e.length * -1)
     }
   })
   return query

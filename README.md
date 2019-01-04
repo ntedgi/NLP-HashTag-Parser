@@ -21,8 +21,11 @@ let hashtagsParser = require('hashtags-parser');
 ```sh
 hashtagsParser("#freetibet")  // = > ["free", "tibet"]
 hashtagsParser("#realdonaldtrump")  // = > ["real","donald","trump"]
-hashtagsParser("#FREETIBET")  // = > ["free", "tibet"]
 hashtagsParser("#freetibetorg")  // = > ["free", "tibet"]
+hashtagsParser("#photooftheday")  // = > ['photo','of','the','day']
+hashtagsParser("#womenshistorymonth") // => ['womens','history','month']
+hashtagsParser("#internationalwomensday") // => ['international','womens','day']
+hashtagsParser("#happybirthday") // => ['happy','birthday']
 ```
 
 ### this is the easy part 
