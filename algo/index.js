@@ -1,6 +1,6 @@
 const hashTagParser = require('./lib/search')
 const p = async () => {
-  let y = await hashTagParser('3-gaza')
+  let y = await hashTagParser('freegazaorg')
   const { words, texts } = y
   if (words.length > 0) console.log(words.join())
   texts.forEach(post => {

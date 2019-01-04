@@ -1,5 +1,4 @@
 let Twitter = require('twitter')
-let fs = require('fs')
 const getTwitterClient = () => {
   const creds = {
     consumer_key_1: 'xPgfl66A3zYYuR8X9DgbcLaez',
@@ -54,7 +53,6 @@ const arrayConcatIsTheString = (res, str) => {
 }
 
 const splitByAns = res => {
-  let result = []
   let dict = new Set()
   res = res.filter(e => e.length > 0)
   res.forEach(phrase => {
@@ -73,7 +71,7 @@ const calculateWordsSupport = texts => {
   let wordsCounts = {}
   texts.forEach(element => {
     element = element.split(' ')
-    let arr = element.reduce((ac, cur) => {
+    element.reduce((ac, cur) => {
       cur = cur.replace(/[^0-9a-z]/gi, '')
       if (ac[cur]) ac[cur] += 1
       else ac[cur] = 1
@@ -101,7 +99,7 @@ const findHashTagOrEquivelentInKeys = (cleanQuery, keys) => {
   keys = keys.map(e => cleanText(e))
   keys.forEach(e => {
     let cleanTerm = e.toLowerCase()
-    if (cleanTerm == cleanQuery || cleanTerm.replace('#', '') == cleanQuery) {
+    if (cleanTerm == cleanQuery) {
       candidates.push(e)
     }
   })
@@ -114,6 +112,7 @@ const splitHashes = hashTags => {
 }
 
 const countWords = (texts, queryTerm) => {
+
   const wordsCounts = calculateWordsSupport(texts)
 
   let keys = Object.keys(wordsCounts)
@@ -150,9 +149,22 @@ const changeNumbersToWords = query => {
   })
   return q
 }
+
+const removeCommonPostfix =query =>{
+  const commonPostfix = ["org"]
+  commonPostfix.forEach(e=>{
+    if(query.endsWith(e)){
+        query = query.slice(0,e.length*-1)
+    }
+  })
+  return query
+}
+
 const handleQuery = query => {
   query = removeHashTagSeparators(query)
   query = changeNumbersToWords(query)
+  query = removeCommonPostfix(query)
+
   return query
 }
 module.exports = query => {
