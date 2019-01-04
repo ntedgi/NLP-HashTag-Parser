@@ -25,15 +25,15 @@
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.4",
+    "babel-loader": "^8.0.4",
     "babel-polyfill": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
-    "chai": "^3.5.0",
-    "coveralls": "^2.11.16",
-    "fs-extra-promise": "^0.4.1",
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.2",
+    "fs-extra-promise": "^1.0.1",
     "istanbul": "^1.0.0-alpha",
-    "mocha": "^2.4.5",
+    "mocha": "^5.2.0",
     "mocha-lcov-reporter": "^1.2.0"
   }
 }
