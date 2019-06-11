@@ -14,7 +14,7 @@
 
 
 ```sh
-let hashtagsParser = require('hashtags-parser');
+const hashtagsParser = require('hashtags-parser');
 ```
 
 
