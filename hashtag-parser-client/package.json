@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "github-fork-ribbon-css": "^0.2.1",
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-scripts": "2.1.2",
